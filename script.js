@@ -5,7 +5,7 @@ const showsSliderItems = 1  // <----- CHANGE THIS PARAMETER TO CHANGE QUANTITY S
 // else slider will work incorretly
 let errorRate = 0
 if (showsSliderItems % 3 === 0) {
-    errorRate = 10
+    errorRate = 1
 }
 if (showsSliderItems === 0) {
     slider.innerHTML = ''
