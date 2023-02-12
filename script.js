@@ -1,5 +1,5 @@
 // CHANGE THIS PARAMETER TO CHANGE QUANTITY SLIDER ITEMS WILL BE SHOW
-const showsSliderItems = 6
+const showsSliderItems = 1
 
 
 // else slider will work incorretly
