@@ -1,0 +1,33 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider-button-prev,
+.slider-button-next {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.slider-container {
+    max-width: 1130px;
+    overflow: hidden;
+}
+
+.slider-block {
+    min-width: 4520px;
+    max-width: 4520px;
+    display: flex;
+    position: relative;
+    right: 0;
+    transition: right 0.6s;
+}
+
+.slider-item {
+    max-width: 1130px;
+}
