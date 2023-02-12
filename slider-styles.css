@@ -12,6 +12,7 @@
 .slider-button-next {
     font-size: 35px;
     cursor: pointer;
+    user-select: none;
 }
 
 .slider-container {
