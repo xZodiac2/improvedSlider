@@ -1,5 +1,5 @@
 const slider = document.querySelector('.slider')
-const displayedSLiderItemsQuantity = 0 // CHANGE THIS VARIABLE TO CHANGE QUANTITY OF SLIDER ITEMS WHICH WILL DISPLAYED
+const displayedSLiderItemsQuantity = 1 // CHANGE THIS VARIABLE TO CHANGE QUANTITY OF SLIDER ITEMS WHICH WILL DISPLAYED
 
 // else slider will woek incorrectly
 let errorRate = 0
@@ -36,14 +36,13 @@ if (displayedSLiderItemsQuantity === 1) {
         designationList.appendChild(designationListItem)
     }
 
-    // query to designation list items worth after the algorithm of creating designation marks because before this algorithm designation marks not exist
     designationListItems = document.querySelectorAll('.designation-list > li')
 
     // this HTML class adds to marks blue background
     designationList.firstChild.classList.add('active')
 }
 
-// changeing width of slider items
+// changing width of slider items
 sliderItems.forEach(sliderItem => {
     sliderItem.style.minWidth = `${sliderItemWidth}px`
     sliderItem.style.maxWidth = `${sliderItemWidth}px`
@@ -55,13 +54,13 @@ sliderBlock.style.maxWidth = `${sliderWidth}px`
 
 sliderButtons.forEach(button => {
     button.addEventListener('click', function() {
-        // this algorithn removing all classes from designation list items
+        // this part of code removing all classes from designation list items
         if (displayedSliderItems) {
             designationListItems.forEach(designationListItem => {
                 designationListItem.classList.remove('active')
             })
         }
-        // main algorithm of offsets the slider
+        // main code of offsets the slider
         if (button.classList.contains('next')) {
             if (rightOffset < sliderWidth - sliderContainerWidth - errorRate) {
                 showingSliderItemIndex++
