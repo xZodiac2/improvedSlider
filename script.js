@@ -1,10 +1,13 @@
 const slider = document.querySelector('.slider')
-const displayedSLiderItemsQuantity = 1 // CHANGE THIS VARIABLE TO CHANGE QUANTITY OF SLIDER ITEMS WHICH WILL DISPLAYED
+const displayedSLiderItemsQuantity = 0 // CHANGE THIS VARIABLE TO CHANGE QUANTITY OF SLIDER ITEMS WHICH WILL DISPLAYED
 
 // else slider will woek incorrectly
 let errorRate = 0
 if (displayedSLiderItemsQuantity % 3 === 0) {
     errorRate = 1
+}
+if (displayedSLiderItemsQuantity === 0) {
+    slider.innerHTML = ''
 }
 
 const sliderContainerWidth = document.querySelector('.slider-container').clientWidth
