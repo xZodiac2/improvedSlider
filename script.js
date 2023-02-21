@@ -4,7 +4,7 @@ const displayedSLiderItemsQuantity = 3
 // else slider will woek incorrectly
 let errorRate = 0
 if (displayedSLiderItemsQuantity % 3 === 0) {
-    errorRate = 10
+    errorRate = 1
 }
 
 const sliderContainerWidth = document.querySelector('.slider-container').clientWidth
